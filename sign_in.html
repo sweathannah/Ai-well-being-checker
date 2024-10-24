@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
+    <title>Sign In</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./src/output.css">
@@ -39,50 +39,34 @@
         <img src="./Assets/Images/mobile corner icon.svg" alt="Corner Icon" class="w-fit">
     </header>
     <section class="bg-[#20126E] my-10 lg:w-[32.5em] m-auto lg:rounded-[1.875rem] lg:shadow-xl p-[2rem] flex flex-col justify-center align-middle">
-        <h1 class="text-[#7B6AD6] mx-auto w-fit font-[700] text-[2rem] my-[1rem] mb-[2rem]">Sign up</h1>
+        <h1 class="text-[#7B6AD6] mx-auto w-fit font-[700] text-[2rem] my-[1rem] mb-[2rem]">Sign in</h1>
 
         <form action="#" method="post" class="w-fit m-auto">
-            <label for="name" class="space-y-[1rem] font-[400] text-[1rem] text-[#F5F5F5]">
-                <p class="w-fit font-[Open Sans]">Full Name:</p>
-                <input type="text" name="name" id="name" class="lg:w-[29rem] w-[19.5rem] h-[2.5rem] rounded-[0.6rem] p-4 text-[#20126E]">
-            </label>
 
             <label for="email" class="space-y-[1rem] font-[400] text-[1rem] text-[#F5F5F5]">
                 <p class="w-fit font-[Open Sans] mt-[2rem]">Email Address:</p>
                 <input type="email" name="email" id="email" class="lg:w-[29rem] w-[19.5rem] h-[2.5rem] rounded-[0.6rem] p-4 text-[#20126E]">
             </label>
 
-            <div class="lg:flex flex-row justify-between mb-[1.5rem]">
-                <label for="password" class="space-y-[1rem] font-[400] text-[1rem] text-[#F5F5F5]">
-                    <p class="w-fit font-[Open Sans] mt-[2rem]">Password:</p>
-                    <div class="password-wrapper">
-                        <input type="password" name="password" id="password" class="lg:w-[10.68rem] w-[19.5rem] h-[2.5rem] rounded-[0.6rem] p-4 text-[#20126E]">
-                        <span class="toggle-password" onclick="togglePassword('password', this)">
-                            <img src="./Assets/Images/eye-fill.svg" alt="Toggle Password Visibility">
-                        </span>
-                    </div>
-                </label>
-
-                <label for="confirm_password" class="space-y-[1rem] font-[400] text-[1rem] text-[#F5F5F5]">
-                    <p class="w-fit font-[Open Sans] mt-[2rem]">Confirm Password:</p>
-                    <div class="password-wrapper">
-                        <input type="password" name="confirm_password" id="confirm_password" class="lg:w-[10.68rem] w-[19.5rem] h-[2.5rem] rounded-[0.6rem] p-4 text-[#20126E]">
-                        <span class="toggle-password" onclick="togglePassword('confirm_password', this)">
-                            <img src="./Assets/Images/eye-fill.svg" alt="Toggle Password Visibility">
-                        </span>
-                    </div>
-                </label>
-            </div>
+            <label for="password" class="space-y-[1rem] font-[400] text-[1rem] text-[#F5F5F5]">
+                <p class="w-fit font-[Open Sans] mt-[2rem]">Password:</p>
+                <div class="password-wrapper">
+                    <input type="password" name="password" id="password" class="lg:w-[29rem] w-[19.5rem] h-[2.5rem] rounded-[0.6rem] p-4 text-[#20126E]">
+                    <span class="toggle-password" onclick="togglePassword('password', this)">
+                        <img src="./Assets/Images/eye-fill.svg" alt="Toggle Password Visibility">
+                    </span>
+                </div>
+            </label>
 
             <label for="terms" class="space-x-3 flex flex-row align-middle">
                 <input type="checkbox" name="terms" id="terms">
                 <span class="font-[Open Sans] font-[400] lg:text-[1rem] text-[0.8rem]">
-                    I agree to all statements in <a href="#" class="font-[500] lg:text-[1.125rem] text-[0.9rem]">Terms of service</a>
+                   Remember me
                 </span>
             </label>
 
             <button class="my-[2rem] bg-[#008080] lg:w-[29rem] w-[19.5rem] h-[2.5rem] rounded-[0.6rem] py-4 text-center" type="submit">Sign Up</button>
-            <p class="w-fit m-auto font-[400] text-[1rem]">Already have an account? <a href="./sign_in.html" class="text-[1.2rem]">Sign in</a></p>
+            <p class="w-fit m-auto font-[400] text-[1rem]">Already have an account? <a href="#" class="text-[1.2rem]">Sign in</a></p>
         </form>
     </section>
 
