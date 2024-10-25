@@ -7,19 +7,20 @@
     
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./src/output.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Open+Sans:wght@300;800&display=swap" rel="stylesheet">
 
     <style>
-        input:focus {
+        /* Input focus */
+        input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus {
             outline: none;
-            border-color: #7B6AD6; /* Color from your design */
+            border-color: #7B6AD6;
             box-shadow: 0 0 0 2px #7B6AD6;
         }
 
+        /* Checkbox customization */
+        input[type="checkbox"] {
+            accent-color: #7B6AD6; 
+        }
 
         .password-wrapper {
             position: relative;
@@ -32,6 +33,26 @@
             transform: translateY(-50%);
             cursor: pointer;
         }
+
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        .overlay-message {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            color: #20126E;
+        }
     </style>
 </head>
 <body class="bg-[#20126E] lg:bg-white text-white font-[Roboto]">
@@ -41,7 +62,7 @@
     <section class="bg-[#20126E] my-10 lg:w-[32.5em] m-auto lg:rounded-[1.875rem] lg:shadow-xl p-[2rem] flex flex-col justify-center align-middle">
         <h1 class="text-[#7B6AD6] mx-auto w-fit font-[700] text-[2rem] my-[1rem] mb-[2rem]">Sign up</h1>
 
-        <form action="#" method="post" class="w-fit m-auto">
+        <form action="./sign_in.html" method="post" id="signupForm" class="w-fit m-auto">
             <label for="name" class="space-y-[1rem] font-[400] text-[1rem] text-[#F5F5F5]">
                 <p class="w-fit font-[Open Sans]">Full Name:</p>
                 <input type="text" name="name" id="name" class="lg:w-[29rem] w-[19.5rem] h-[2.5rem] rounded-[0.6rem] p-4 text-[#20126E]">
@@ -81,21 +102,76 @@
                 </span>
             </label>
 
-            <button class="my-[2rem] bg-[#008080] lg:w-[29rem] w-[19.5rem] h-[2.5rem] rounded-[0.6rem] py-4 text-center" type="submit">Sign Up</button>
+            <button class="my-[2rem] bg-[#008080] lg:w-[29rem] w-[19.5rem] h-[2.5rem] rounded-[0.6rem] text-center" type="submit"><span class="w-fit m-auto">Sign Up</span></button>
             <p class="w-fit m-auto font-[400] text-[1rem]">Already have an account? <a href="./sign_in.html" class="text-[1.2rem]">Sign in</a></p>
         </form>
     </section>
 
+    <!-- Error Overlay -->
+    <div class="overlay" id="errorOverlay">
+        <div class="error-message" id="errorMessage"></div>
+    </div>
+
     <script>
         function togglePassword(fieldId, iconElement) {
             const input = document.getElementById(fieldId);
-            const isPasswordVisible = input.type === "password";
-            input.type = isPasswordVisible ? "text" : "password";
-
-            // Change the icon based on visibility
-            iconElement.querySelector('img').src = isPasswordVisible 
+            input.type = input.type === "password" ? "text" : "password";
+            iconElement.querySelector('img').src = input.type === "text" 
                 ? "./Assets/Images/eye-off-line.svg"
                 : "./Assets/Images/eye-fill.svg";
+        }
+
+        const form = document.getElementById('signupForm');
+        const errorOverlay = document.getElementById('errorOverlay');
+        const errorMessage = document.getElementById('errorMessage');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form from submitting normally
+            
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const password = document.getElementById('password').value.trim();
+            const confirmPassword = document.getElementById('confirm_password').value.trim();
+            const terms = document.getElementById('terms').checked;
+
+            if (!name || !email || !password || !confirmPassword) {
+                showError('Please fill in all fields.');
+            } else if (!validateName(name)) {
+                showError('Enter your full name: surname, first name, and optionally middle name.');
+            } else if (password !== confirmPassword) {
+                showError('Passwords do not match.');
+            } else if (!terms) {
+                showError('You must agree to the terms of service.');
+            } else {
+                // Simulate form submission success
+                showSuccess("Form submitted successfully!");
+
+                // Optionally clear the form fields
+                form.reset();
+            }
+        });
+
+        function showSuccess(message) {
+            errorMessage.innerText = message;
+            errorOverlay.style.display = 'flex';
+            errorOverlay.style.backgroundColor = 'rgba(0, 0, 0, 0.5)'; 
+        }
+
+
+        function showError(message) {
+            errorMessage.innerText = message;
+            errorOverlay.style.display = 'flex';
+        }
+
+        errorOverlay.addEventListener('click', (event) => {
+            if (!event.target.closest('.error-message')) {
+                errorOverlay.style.display = 'none';
+            }
+        });
+
+        function validateName(name) {
+            const nameParts = name.split(" ");
+            return nameParts.length >= 2;
         }
     </script>
 </body>
