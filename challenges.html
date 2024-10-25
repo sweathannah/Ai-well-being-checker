@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Challenges</title>
+        
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="./src/output.css">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    </head>
+<body class="width-full height-full font-[Roboto]">
+    <!-- Desktop view -->
+
+    <main class="">
+        <div class="mx-auto mt-[6rem]">
+            <h1 class="font-bold text-[2rem] leading-[2.35rem] text-center w-[46.1rem]">Please select any of the following <span class="text-[#7B6AD6]">challenges</span> that you’ve experienced in the past or are currently facing</h1>
+            <p class="text-[1rem] text-center text-[#D9D9D9] mt-[0.5rem] leading-[1.4rem] font-[Open Sans] -[20.6rem]">You can select multiple options.</p>
+        </div>
+        <div class="mx-[22.2rem] grid grid-cols-2 gap-x-[5rem] gap-y-[1.6rem] mt-[1.6rem] py-[2.6rem] font-[Open Sans]">
+            <button class="my-button rounded-[30px] border-[1px] h-[4.3rem] text-[0.9rem] text-center border-[#7B6AD6] -[1.5rem] -[8.6rem]">Anxiety</button>
+            <button class="my-button rounded-[30px] border-[1px] h-[4.3rem] text-[0.9rem] text-center border-[#7B6AD6] -[1.5rem] -[8.6rem]">Depression</button>
+            <button class="my-button rounded-[30px] border-[1px] h-[4.3rem] text-[0.9rem] text-center border-[#7B6AD6] -[1.5rem] -[8.6rem]">Bornout</button>
+            <button class="my-button rounded-[30px] border-[1px] h-[4.3rem] text-[0.9rem] text-center border-[#7B6AD6] -[1.5rem] -[8.6rem]">Stress</button>
+            <button class="my-button rounded-[30px] border-[1px] h-[4.3rem] text-[0.9rem] text-center border-[#7B6AD6] -[1.5rem] -[8.6rem]">Relationship issue</button>
+            <button class="my-button rounded-[30px] border-[1px] h-[4.3rem] text-[0.9rem] text-center border-[#7B6AD6] -[1.5rem] -[8.6rem]">Trauma</button>
+            <button class="my-button rounded-[30px] border-[1px] h-[4.3rem] text-[0.9rem] text-center border-[#7B6AD6] -[1.5rem] -[8.6rem]">Low self-esteem</button>
+            <button class="my-button rounded-[30px] border-[1px] h-[4.3rem] text-[0.9rem] text-center border-[#7B6AD6] -[1.5rem] -[8.6rem]">Loneliness</button>
+        </div>
+
+        <button class="bg-[#008080] rounded-[30px] mt-[3.9rem] text-[#FFFFFF] text-center h-[3.8rem] py-[1.3rem] px-[7.6rem] mx-auto block mb-[12.9rem]">Continue</button>
+    </main>
+
+    <script>
+
+        const buttons = document.querySelectorAll(".my-button");
+        let isSelected = false;
+        function selectButton(button) {
+            if (!isSelected) {
+                button.classList.add("bg-[#7B6AD6]");
+                button.classList.add("text-[#ffff]");
+                isSelected = true;
+            } else {
+                button.classList.remove("bg-[#7B6AD6]")
+                button.classList.remove("text-[#ffff]")
+                isSelected = false
+            }
+        }
+        buttons.forEach((button) => {
+            button.addEventListener('click', () => selectButton(button));
+        });
+    </script>
+</body>
+</html>
