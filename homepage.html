@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurora Home Page</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="shortcut icon" href="./Assets/Images/aurora.jpg" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Numans&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <style>
+        /* Bubble container styling */
+        .emoji-container {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px;
+            border-radius: 9999px;
+            overflow: hidden;
+            animation: slide 6s linear infinite;
+        }
+
+        /* Emoji bubble styling */
+        .emoji-bubble {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #957bd2; /* Darker purple for bubble */
+            border-radius: 50%;
+            padding: 5px;
+            width: 50px;
+            height: 50px;
+            font-size: 1.5rem;
+            color: #ffffff;
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+            animation: bubbleMove 2s infinite;
+        }
+
+        /* Animation for "floating" effect on each emoji */
+        @keyframes bubbleMove {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+    </style>
+</head>
+<body class="font-[Roboto] p-[1.94rem]">
+    <div class="flex flex-row space-x-[0.94rem]">
+        <aside class="flex flex-col sticky shadow-lg h-screen">
+            <section class="flex flex-row items-center border-b-[0.01rem] border-b-[#A9A9A9] w-full p-3 border-solid mb-[2rem] ">
+                <div class="relative">
+                    <img src="./Assets/Images/logo.svg" alt="Aurora logo">
+                    <img src="./Assets/Images/logo_a.svg" alt="Accessory to the Aurora AI" class="absolute inset-0 m-auto">
+                </div>
+                <span class="text-[#333] font-[Numans] font-[600] text-[1rem]">AURORA.AI</span>
+            </section>
+            <section class="p-[1.19rem]">
+                <ul class="flex flex-col space-y-[1.5rem]">
+                    <a href="#">
+                        <li class="flex flex-row items-center space-x-[1rem]">
+                            <img src="./Assets/homepage_images/Progres.svg" alt="progress icon">
+                            <span class="font-[700] text-[0.9rem] text-[#555555] ">Progress Overview</span>
+                            <img src="./Assets/homepage_images/Arrow-dark.svg" alt="arrow right icon">
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="flex flex-row items-center space-x-[1rem]">
+                            <img src="./Assets/homepage_images/Dashbaord.svg" alt="Overview icon">
+                            <span class="font-[700] text-[0.9rem] text-[#555555]">Overview</span>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="flex flex-row items-center space-x-[1rem]">
+                            <img src="./Assets/homepage_images/Dashbaord.svg" alt="Overview icon">
+                            <span class="font-[700] text-[0.9rem] text-[#555555]">Goals</span>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="flex flex-row items-center space-x-[1rem]">
+                            <img src="./Assets/homepage_images/Dashbaord.svg" alt="Overview icon">
+                            <span class="font-[700] text-[0.9rem] text-[#555555]">Chart with AURORA.AI</span>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="flex flex-row items-center space-x-[1rem]">
+                            <img src="./Assets/homepage_images/Dashbaord.svg" alt="Overview icon">
+                            <span class="font-[700] text-[0.9rem] text-[#555555]">Daily Challenge</span>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="flex flex-row items-center space-x-[1rem]">
+                            <img src="./Assets/homepage_images/Dashbaord.svg" alt="Overview icon">
+                            <span class="font-[700] text-[0.9rem] text-[#555555]">Notepad</span>
+                        </li>
+                    </a>
+                </ul>
+            </section>
+        </aside>
+        <main class="container">
+            <header class="px-[1.5rem] py-[1rem] shadow-lg w-full border-b-[0.01rem] border-b-[#A9A9A9] flex flex-row justify-between">
+                <div>
+                    <p class="font-[400] text-[0.625rem] text-[#64748B] font-[Open Sans]">Good Morning</p>
+                    <h1 class="text-[#475569] text-[1rem] font-[600]">Welcome back, Oreoluwa!</h1>
+                </div>
+                <div class="flex flex-row space-x-[0.875rem]">
+                    <img src="./Assets/homepage_images/notification.svg" alt="Notification Icon">
+                    <img src="./Assets/homepage_images/settings.svg" alt="settings Icon">
+                    <img src="./Assets/homepage_images/profile_pic.svg" alt="profile_pic">
+                </div>
+            </header>
+            <section class="rounded-[1.5rem] my-[0.375rem] shadow-lg relative">
+                <div class="p-[1.4rem] font-[700] text-[1.25rem] text-[#555555] flex flex-row justify-between pb-[3.07rem]">
+                    <h2 >How are you feeling today?</h2>
+                    <div class="emoji-container">
+                        <img src="./Assets/homepage_images/emoji1.svg" alt="Happy emoji" class="emoji-bubble">
+                        <img src="./Assets/homepage_images/emoji2.svg" alt="Exicited emoji" class="emoji-bubble">
+                        <img src="./Assets/homepage_images/emoji3.svg" alt="Greanng face with sweat emoji" class="emoji-bubble">
+                        <img src="./Assets/homepage_images/emoji4.svg" alt="Confused emoji" class="emoji-bubble">
+                        <img src="./Assets/homepage_images/emoji5.svg" alt="Hot emoji" class="emoji-bubble">
+                        <img src="./Assets/homepage_images/emoji6.svg" alt="emoji with tears of joy" class="emoji-bubble">
+                        <img src="./Assets/homepage_images/emoji7.svg" alt=" anxious emoji with sweat" class="emoji-bubble">
+                    </div>
+                </div>
+                <div class="w-full relative h-[200px] overflow-hidden">
+                    <img src="./Assets/homepage_images/pink_wave.svg" alt="" class="absolute top-0 left-0 w-full h-full z-10 opacity-80">
+                    <img src="./Assets/homepage_images/purple_wave.svg" alt="" class="absolute top-0 left-0 w-full h-full z-20 opacity-80">
+                </div>
+            </section>
+            <section class="my-[2.9rem]">
+                <article class="shadow-lg">
+
+                </article>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
