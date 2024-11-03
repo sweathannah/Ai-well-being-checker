@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aurora Resources</title>
+        
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="./src/output.css">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Numans&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    </head>
+<body>
+    
+    <section class="flex gap-[0.5rem] max-w-full">
+        <!-- Sidebar content -->
+            <section class="px-[1.9rem] w-[17.1rem] h-screen pt-[2rem] shadow-xl shadow-top rounded-l-[10px] shrink-0">
+                <div class="flex items-center border-solid border-b-[#333333] border-b-[0.5px] space-x-2">
+                    <div class="relative w-[3.2rem]">
+                        <img src="./Assets/Images/logo.svg" alt="Aurora logo" class="w-full h-autp">
+                        <img src="./Assets/Images/logo_a.svg" alt="Accessory to the Aurora AI" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                    </div>
+                    <span class="text-[#333333] font-[Numans] text-lg">AURORA.AI</span>
+                </div>
+        
+                <ul class="flex flex-col space-y-[1.5rem] mt-[2.4rem] font-[Roboto]">
+                    <a href="#">
+                        <li class="flex flex-row items-center space-x-[1rem]">
+                            <img src="./Assets/homepage_images/Progres.svg" alt="progress icon">
+                            <span class="font-[800] text-[1rem] leading-[1.1rem] text-[#555555] ">Progress Overview</span>
+                            <img src="./Assets/homepage_images/Arrow-dark.svg" alt="arrow right icon">
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="flex flex-row items-center space-x-[1rem]">
+                            <img src="./Assets/homepage_images/Dashbaord.svg" alt="Overview icon">
+                            <span class="font-[800] text-[1rem] leading-[1.1rem] text-[#555555]">Overview</span>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="flex flex-row items-center space-x-[1rem]">
+                            <img src="./Assets/homepage_images/Dashbaord.svg" alt="Overview icon">
+                            <span class="font-[800] text-[1rem] leading-[1.1rem] text-[#555555]">Goals</span>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="flex flex-row items-center space-x-[1rem]">
+                            <img src="./Assets/homepage_images/Dashbaord.svg" alt="Overview icon">
+                            <span class="font-[700] text-[0.9rem] text-[#555555]">Chart with AURORA.AI</span>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="flex flex-row items-center space-x-[1rem]">
+                            <img src="./Assets/homepage_images/Dashbaord.svg" alt="Overview icon">
+                            <span class="font-[800] text-[1rem] leading-[1.1rem] text-[#555555] ">Daily Challenge</span>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="flex flex-row items-center space-x-[1rem]">
+                            <img src="./Assets/homepage_images/Dashbaord.svg" alt="Overview icon">
+                            <span class="font-[800] text-[1rem] leading-[1.1rem] text-[#555555] ">Notepad</span>
+                        </li>
+                    </a>
+                </ul>
+        
+                <ul class="absolute bottom-0 flex flex-col space-y-[1rem] text-[0.88rem] font-[]">
+                    <a href="#" class="">
+                        <li class="flex items-center gap-[1rem] pl-4 py-2 bg-[#FF6F61] rounded-[8px] w-[12rem]">
+                            <img src="./Assets/Images/Vector.svg" alt="A question mark icon" class="">
+                            <p class="text-[#FFFFFF]">Help</p>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="flex items-center gap-[1rem] pl-4 py-2">
+                            <img src="./Assets/Images/user.svg" alt="A user's account page icon">
+                            <p class="text-[#008080]">My Account</p>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="flex items-center gap-[1rem] pl-4 py-2">
+                            <img src="./Assets/Images/Logout.svg" alt="A logout icon">
+                            <p class="text-[#008080]">Logout</p>
+                        </li>
+                    </a>
+                </ul>
+            </section>
+        
+            <main class="font-[Roboto] w-full">
+        
+                <header class="px-[1.5rem] py-[1rem] shadow-lg  border-b-[0.01rem] border-b-[#A9A9A9] flex flex-row justify-between">
+                    <div>
+                        <p class="font-[400] text-[0.625rem] text-[#64748B] font-[Open Sans]">Good Morning</p>
+                        <h1 class="text-[#475569] text-[1rem] font-[600]">Welcome back, Oreoluwa!</h1>
+                    </div>
+                    <div class="flex flex-row space-x-[0.875rem]">
+                        <img src="./Assets/homepage_images/notification.svg" alt="Notification Icon">
+                        <img src="./Assets/homepage_images/settings.svg" alt="settings Icon">
+                        <img src="./Assets/homepage_images/profile_pic.svg" alt="profile_pic">
+                    </div>
+                </header>
+            </main>
+
+
+</body>
+</html>
