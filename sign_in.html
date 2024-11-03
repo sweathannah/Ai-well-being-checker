@@ -61,24 +61,24 @@
         }
     </style>
 </head>
-<body class="bg-[#20126E] lg:bg-white text-white font-[Roboto]">
+<body class="bg-[#20126E] lg:bg-[#7B6AD6] text-white font-[Roboto]">
     <header class="w-full flex justify-end lg:hidden">
         <img src="./Assets/Images/mobile corner icon.svg" alt="Corner Icon" class="w-fit">
     </header>
-    <section class="bg-[#20126E] my-10 lg:w-[32.5em] m-auto lg:rounded-[1.875rem] lg:shadow-xl p-[2rem] flex flex-col justify-center align-middle">
-        <h1 class="text-[#7B6AD6] mx-auto w-fit font-[700] text-[2rem] my-[1rem] mb-[2rem]">Sign in</h1>
+    <section class="bg-[#20126E] lg:bg-white my-10 lg:w-[32.5em] m-auto lg:rounded-[1.875rem] lg:shadow-xl p-[2rem] flex flex-col justify-center align-middle">
+        <h1 class="text-[#7B6AD6] mx-auto w-fit font-[700] text-[2rem] my-[1rem] mb-[2rem]">Aurora</h1>
 
         <form id="signInForm" action="#" method="post" class="w-fit m-auto">
 
-            <label for="email" class="space-y-[1rem] font-[400] text-[1rem] text-[#F5F5F5]">
+            <label for="email" class="space-y-[1rem] font-[400] text-[1rem] text-[#555]">
                 <p class="w-fit font-[Open Sans] mt-[2rem]">Email Address:</p>
-                <input type="email" name="email" id="email" class="lg:w-[29rem] w-[19.5rem] h-[2.5rem] rounded-[0.6rem] p-4 text-[#20126E]">
+                <input type="email" name="email" id="email" class="lg:w-[29rem] w-[19.5rem] h-[2.5rem] rounded-[0.6rem] p-4 text-[#20126E] bg-[#F5F5F5] ">
             </label>
 
-            <label for="password" class="space-y-[1rem] font-[400] text-[1rem] text-[#F5F5F5]">
+            <label for="password" class="space-y-[1rem] font-[400] text-[1rem] text-[#555]">
                 <p class="w-fit font-[Open Sans] mt-[2rem]">Password:</p>
                 <div class="password-wrapper">
-                    <input type="password" name="password" id="password" class="lg:w-[29rem] w-[19.5rem] h-[2.5rem] rounded-[0.6rem] p-4 text-[#20126E]">
+                    <input type="password" name="password" id="password" class="lg:w-[29rem] w-[19.5rem] h-[2.5rem] rounded-[0.6rem] p-4 text-[#20126E] bg-[#F5F5F5] ">
                     <span class="toggle-password" onclick="togglePassword('password', this)">
                         <img src="./Assets/Images/eye-fill.svg" alt="Toggle Password Visibility">
                     </span>
@@ -88,23 +88,23 @@
             <div class="flex justify-between mt-4">
                 <label for="terms" class="space-x-3 flex flex-row align-middle ">
                     <input type="checkbox" name="terms" id="terms">
-                    <span class="font-[Open Sans] font-[400] lg:text-[0.8rem] text-[0.8rem]">
+                    <span class="font-[Open Sans] font-[400] lg:text-[0.8rem] text-[0.8rem] text-[#555]">
                        Remember me
                     </span>
                 </label>
                 <p class="font-[400] text-[0.8rem]">Forget Password?</p>
             </div>
-            <button class="mt-[2rem] bg-[#008080] lg:w-[29rem] w-[19.5rem] h-[2.5rem] rounded-[0.6rem] text-center" type="submit"><span class="w-fit m-auto">Sign In</span></button>
+            <button class="mt-[2rem] bg-[#7B6AD6] lg:w-[29rem] w-[19.5rem] h-[2.5rem] rounded-[0.6rem] text-center" type="submit"><span class="w-fit m-auto">Sign In</span></button>
         </form>
         <div>
-            <p class="w-fit m-auto font-[400] text-[0.8rem] mt-[1rem]">Don't have an account? <a href="./sign_up.html" class="text-[0.9rem]">Sign up</a></p>
+            <p class="w-fit m-auto font-[400] text-[0.8rem] mt-[1rem] text-[#555]">Don't have an account? <a href="./sign_up.html" class="text-[0.9rem] text-[#7B6AD6]">Sign up</a></p>
             <div class="flex justify-between my-[1.2rem]">
                 <img src="./Assets/Images/Line 1.svg" alt="line" class="w-[12rem]">
                 <span>or</span>
                 <img src="./Assets/Images/Line 1.svg" alt="line" class="w-[12rem]">
             </div>
             <div class="w-fit flex m-auto space-x-[3.4rem]">
-                <img src="Assets/Images/google_icon.svg" alt="google_icon">
+                <img src="Assets/Images/google-fill.svg" alt="google_icon">
                 <img src="Assets/Images/x_icon.svg" alt="x_icon">
                 <img src="Assets/Images/facebook_icon.svg" alt="facebook_icon">
             </div>
