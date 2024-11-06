@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Challenges</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="shortcut icon" href="./Assets/Images/aurora.jpg" type="image/x-icon">
+    
+
+    <!-- aos animation cdn -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Numans&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Numans&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <style>
+            /* Custom style to change the color of the progress bar fill */
+        progress[value]::-webkit-progress-value {
+        background-color: #7B6AD6;
+        }
+        progress[value]::-moz-progress-bar {
+        background-color: #7B6AD6;
+        }
+        progress[value] {
+        color: #7B6AD6; /* For other browsers */
+        }
+
+            /* Custom styles for the underline effect */
+        .active-tab {
+        border-bottom: 2px solid #7B6AD6;
+        color: #7B6AD6;
+        }
+    </style>
+ 
+</head>
+<body class="font-[Roboto] p-[1.94rem] pr-2">
+    <div class="flex flex-row space-x-[0.94rem]">
+        <aside class="flex flex-col sticky shadow-lg justify-between pb-[8rem]">
+            <section>
+                <section class="flex flex-row items-center border-b-[0.01rem] border-b-[#A9A9A9] w-full p-3 border-solid mb-[2rem] ">
+                    <div class="relative">
+                        <img src="./Assets/Images/logo.svg" alt="Aurora logo">
+                        <img src="./Assets/Images/logo_a.svg" alt="Accessory to the Aurora AI" class="absolute inset-0 m-auto">
+                    </div>
+                    <span class="text-[#333] font-[Numans] font-[600] text-[1rem]">AURORA.AI</span>
+                </section>
+                <section class="p-[1.19rem]">
+                    <ul class="flex flex-col space-y-[1.5rem]">
+                        <a href="./homepage.html" class=" text-[#555555]">
+                            <li class="flex flex-row items-center space-x-[1rem]">
+                                <img src="./Assets/homepage_images/Progres.svg" alt="progress icon">
+                                <span class="font-[700] text-[0.9rem]">Dashboard</span>
+                                <img src="./Assets/homepage_images/Arrow-dark.svg" alt="arrow right icon">
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li class="flex flex-row items-center space-x-[1rem]">
+                                <img src="./Assets/homepage_images/Dashbaord.svg" alt="Overview icon">
+                                <span class="font-[700] text-[0.9rem] text-[#555555]">Mood Tracker</span>
+                            </li>
+                        </a>
+                        <a href="./daily_challenge.html">
+                            <li class="flex flex-row items-center space-x-[1rem]">
+                                <img src="./Assets/homepage_images/Dashbaord.svg" alt="Overview icon">
+                                <span class="font-[700] text-[0.9rem] text-[#555555]">Daily Challenges</span>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li class="flex flex-row items-center space-x-[1rem]">
+                                <img src="./Assets/homepage_images/Dashbaord.svg" alt="Overview icon">
+                                <span class="font-[700] text-[0.9rem] text-[#555555]">Resources</span>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li class="flex flex-row items-center space-x-[1rem]">
+                                <img src="./Assets/homepage_images/Dashbaord.svg" alt="Overview icon">
+                                <span class="font-[700] text-[0.9rem] text-[#555555]">Self-Care Tips</span>
+                            </li>
+                        </a>
+                        <a href="./mood_selection.html">
+                            <li class="flex flex-row items-center space-x-[1rem]">
+                                <img src="./Assets/homepage_images/Dashbaord.svg" alt="Overview icon">
+                                <span class="font-[700] text-[0.9rem] text-[#555555]">Chart with AURORA.AI</span>
+                            </li>
+                        </a>
+                       
+                        <a href="#">
+                            <li class="flex flex-row items-center space-x-[1rem]">
+                                <img src="./Assets/homepage_images/Dashbaord.svg" alt="Overview icon">
+                                <span class="font-[700] text-[0.9rem] text-[#555555]">Notepad</span>
+                            </li>
+                        </a>
+                    </ul>
+                </section>
+            </section>
+            <section class="p-[1.19rem]">
+                <ul class="flex flex-col space-y-[3rem]">
+                    <a href="#" class="bg-[#FF6F61] px-[1rem] py-[0.75rem] rounded-[0.5rem]">
+                        <li class="flex flex-row items-center space-x-[1rem]">
+                            <img src="./Assets/homepage_images/Help (1).svg">
+                            <span class="font-[700] text-[0.9rem] text-[#fff] ">Help</span>
+                        </li>
+                    </a>
+                    <a href="#" class="px-[1rem]">
+                        <li class="flex flex-row items-center space-x-[1rem]">
+                            <img src="./Assets/homepage_images/account_icon.svg" alt="Account icon">
+                            <span class="font-[700] text-[0.9rem] text-[#555555]">My Account</span>
+                        </li>
+                    </a>
+                    <a href="#" class="px-[1rem]">
+                        <li class="flex flex-row items-center space-x-[1rem]">
+                            <img src="./Assets/homepage_images/logout.svg" alt="Logout icon">
+                            <span class="font-[700] text-[0.9rem] text-[#555555]">Logout</span>
+                        </li>
+                    </a>
+                </ul>
+            </section>
+        </aside>
+        <main class="container">
+            <header class="px-[1.5rem] py-[1rem] shadow-lg w-full border-b-[0.01rem] border-b-[#A9A9A9] flex flex-row justify-between">
+                <div>
+                    <p class="font-[400] text-[0.625rem] text-[#64748B] font-[Open Sans]">Good Morning</p>
+                    <h1 class="text-[#475569] text-[1rem] font-[600]">Welcome back, Oreoluwa!</h1>
+                </div>
+                <div class="flex flex-row space-x-[0.875rem]">
+                    <img src="./Assets/homepage_images/notification.svg" alt="Notification Icon">
+                    <img src="./Assets/homepage_images/settings.svg" alt="settings Icon">
+                    <img src="./Assets/homepage_images/profile_pic.svg" alt="profile_pic">
+                </div>
+            </header>
+            <section class="w-[60%] mt-[1.5rem] shadow-lg p-[1.59rem] border-b-[2px] border-gray-300">
+                <div class="flex justify-between items-center font-[500] text-[0.7rem] text-[#555555CC] mb-[2.41rem]">
+                    <label for="Challenge">Today:</label>
+                    <progress id="file" max="100" value="70" class="w-[25rem] h-2 text-black rounded-lg overflow-hidden appearance-none">70%</progress>
+                    <p>55% completed</p>
+                </div>
+                 <!-- Tab Navigation -->
+                <div class="w-full max-w-2xl flex space-x-8">
+                    <a href="#" id="board-tab" class="text-[#333333] font-[500] text-[0.9rem] py-2 px-2 hover:text-purple-500" onclick="switchTab('board')">Board</a>
+                    <a href="#" id="notes-tab" class="text-[#333333] font-[500] text-[0.9rem] py-2 px-2 hover:text-purple-500" onclick="switchTab('notes')">Notes</a>
+                </div>
+            </section>
+            <section class="w-[60%] mt-[1.5rem] shadow-lg p-[1.59rem]">
+                <!-- Board Content (default visible) -->
+                <div id="board-content" class="w-full max-w-2xl ">
+                    <div class="flex p-[0.8rem] mt-8 bg-[#F5F5F5] w-fit rounded-[0.67rem]">
+                        <div class="bg-white rounded-lg shadow-md p-4 w-1/3 w-full">
+                            <h3 class="text-lg font-bold text-green-500">Completed</h3>
+                            <div class="mt-4 space-y-4">
+                            <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                                <span class="text-sm font-semibold text-green-600">Completed</span>
+                                <p class="mt-2 text-gray-700">Walk 10 Minutes</p>
+                                <p class="text-xs text-gray-500">Felt refreshed after a short walk</p>
+                            </div>
+                            </div>
+                        </div>
+                    <!-- Add more task columns as needed -->
+                    </div>
+                </div>
+
+                <!-- Notes Content (hidden initially) -->
+                <div id="notes-content" class="w-full max-w-2xl hidden">
+                    <div class="flex flex-col items-start bg-white p-4 rounded-lg shadow-md">
+                    <h3 class="text-lg font-bold text-purple-500 mb-4">Notes</h3>
+                    <textarea id="notes-text" class="w-full h-64 p-2 border border-gray-300 rounded-lg" placeholder="Pour your heart out..."></textarea>
+                    <button class="mt-4 px-4 py-2 bg-purple-500 text-white rounded-lg" onclick="saveNotes()">Save</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+            // Load saved notes from localStorage on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            const savedNotes = localStorage.getItem('notes');
+            if (savedNotes) {
+                document.getElementById('notes-text').value = savedNotes;
+            }
+            const activeTab = localStorage.getItem('activeTab') || 'board';
+            switchTab(activeTab);
+        });
+
+        // Switch between Board and Notes tabs
+        function switchTab(tab) {
+            // Update active tab styling
+            document.getElementById('board-tab').classList.remove('active-tab');
+            document.getElementById('notes-tab').classList.remove('active-tab');
+            document.getElementById(`${tab}-tab`).classList.add('active-tab');
+            
+            // Show/hide content sections
+            document.getElementById('board-content').classList.toggle('hidden', tab !== 'board');
+            document.getElementById('notes-content').classList.toggle('hidden', tab !== 'notes');
+
+            // Save the active tab to localStorage
+            localStorage.setItem('activeTab', tab);
+        }
+
+        // Save notes to localStorage
+        function saveNotes() {
+            const notesText = document.getElementById('notes-text').value;
+            localStorage.setItem('notes', notesText);
+            alert('Notes saved!');
+        }
+    </script>
+</body>
+</html>
