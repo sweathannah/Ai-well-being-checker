@@ -7,7 +7,8 @@
         
         <script src="https://cdn.tailwindcss.com"></script>
         <link rel="stylesheet" href="./src/output.css">
-    
+        <link rel="shortcut icon" href="./Assets/Images/aurora.jpg" type="image/x-icon">
+        
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -21,7 +22,7 @@
     
     <section class="flex gap-[0.5rem] max-w-full">
         <!-- Sidebar content -->
-            <section class="px-[1.9rem] w-[17.1rem] h-screen pt-[2rem] shadow-xl shadow-top rounded-l-[10px] shrink-0">
+            <section class="px-[1.9rem] w-[17.13rem] h-screen pt-[2rem] shadow-xl shadow-top rounded-l-[10px] shrink-0">
                 <div class="flex items-center border-solid border-b-[#333333] border-b-[0.5px] space-x-2">
                     <div class="relative w-[3.2rem]">
                         <img src="./Assets/Images/logo.svg" alt="Aurora logo" class="w-full h-autp">
@@ -34,43 +35,37 @@
                     <a href="#">
                         <li class="flex flex-row items-center space-x-[1rem]">
                             <img src="./Assets/homepage_images/Progres.svg" alt="progress icon">
-                            <span class="font-[800] text-[1rem] leading-[1.1rem] text-[#555555] ">Progress Overview</span>
+                            <span class="active:font-[800] text-[1rem] leading-[1.1rem] text-[#555555] ">Dashboard</span>
                             <img src="./Assets/homepage_images/Arrow-dark.svg" alt="arrow right icon">
                         </li>
                     </a>
                     <a href="#">
                         <li class="flex flex-row items-center space-x-[1rem]">
                             <img src="./Assets/homepage_images/Dashbaord.svg" alt="Overview icon">
-                            <span class="font-[800] text-[1rem] leading-[1.1rem] text-[#555555]">Overview</span>
+                            <span class="active:font-[800] text-[1rem] leading-[1.1rem] text-[#555555]">Mood Tracker</span>
                         </li>
                     </a>
                     <a href="#">
                         <li class="flex flex-row items-center space-x-[1rem]">
                             <img src="./Assets/homepage_images/Dashbaord.svg" alt="Overview icon">
-                            <span class="font-[800] text-[1rem] leading-[1.1rem] text-[#555555]">Goals</span>
+                            <span class="active:font-[800] text-[1rem] leading-[1.1rem] text-[#555555]">Daily Challenges</span>
                         </li>
                     </a>
                     <a href="#">
                         <li class="flex flex-row items-center space-x-[1rem]">
                             <img src="./Assets/homepage_images/Dashbaord.svg" alt="Overview icon">
-                            <span class="font-[700] text-[0.9rem] text-[#555555]">Chart with AURORA.AI</span>
+                            <span class="active:font-[800] text-[1rem] text-[#555555]">Resources & Mentorship</span>
                         </li>
                     </a>
                     <a href="#">
                         <li class="flex flex-row items-center space-x-[1rem]">
                             <img src="./Assets/homepage_images/Dashbaord.svg" alt="Overview icon">
-                            <span class="font-[800] text-[1rem] leading-[1.1rem] text-[#555555] ">Daily Challenge</span>
-                        </li>
-                    </a>
-                    <a href="#">
-                        <li class="flex flex-row items-center space-x-[1rem]">
-                            <img src="./Assets/homepage_images/Dashbaord.svg" alt="Overview icon">
-                            <span class="font-[800] text-[1rem] leading-[1.1rem] text-[#555555] ">Notepad</span>
+                            <span class="active:font-[800] text-[1rem] leading-[1.1rem] text-[#555555] ">Self-Care Tips</span>
                         </li>
                     </a>
                 </ul>
         
-                <ul class="absolute bottom-0 flex flex-col space-y-[1rem] text-[0.88rem] font-[]">
+                <ul class="absolute bottom-0 flex flex-col space-y-[1rem] text-[0.88rem] font-[] mb-4">
                     <a href="#" class="">
                         <li class="flex items-center gap-[1rem] pl-4 py-2 bg-[#FF6F61] rounded-[8px] w-[12rem]">
                             <img src="./Assets/Images/Vector.svg" alt="A question mark icon" class="">
@@ -105,6 +100,127 @@
                         <img src="./Assets/homepage_images/profile_pic.svg" alt="profile_pic">
                     </div>
                 </header>
+
+                <div class="text-[#333333] text-[0.7rem] flex justify-between mt-[1.2rem]">
+                    <div class="flex gap-[2.2rem]">
+                        <h3 class="font-[500]">Resources</h3>
+                        <h3 class="font-[500]">Mentorship</h3>
+                    </div>
+                    <div>
+                        <img src="./Assets/resourcespage_assets/Refresh-Icon" alt="A 'refresh page' icon">
+                        <img src="./Assets/resourcespage_assets/TechOff 2.0 Hackathon (1).zip" alt="">
+                    </div>
+                </div>
+
+                <section class="flex items-center gap-[1.5rem] text-[#333333] text-[0.6rem] mt-[2rem]">
+                    <div class="h-[16.2rem] w-[12.13rem] relative">
+                        <img src="./Assets/resourcespage_assets/Stress Manage.svg" alt="Image of a book on stress management" class="absolute rounded-[12px] transform top-1/2 left-1/2 -translate-x-1/2 translate-y-1/2">
+
+                        <div class="w-[12.13rem] h-[11.6rem] shadow-lg flex space-y-2 flex-col justify-end px-[1.1rem] pb-[0.9rem] rounded-[12px]">
+                            <p class="font-[700] text-center">STRESS MANAGEMENT</p>
+                            <p class="text-center">Stress Management and Relaxation Techniques</p>
+                            <div class="flex items-center justify-center space-x-[0.9rem]">
+                                <img src="./Assets/resourcespage_assets/Icons/Eye-fill.svg" alt="The eye icon" class="bg-[#7B6AD6] w-[0.94rem] h-[0.94rem] rounded-[2px] -1 -[2px]">
+                                <img src="./Assets/resourcespage_assets/Icons/Play-Video Icon.svg" alt="Icon to play videos" class="bg-[#7B6AD6] w-[0.94rem] h-[0.94rem] rounded-[2px] -1 -[2px]">
+                                <img src="./Assets/resourcespage_assets/Icons/Headset.svg" alt="An headset icon" class="bg-[#7B6AD6] w-[0.94rem] h-[0.94rem] roounded-[2px] -1 -[2px]">
+                                <img src="./Assets/resourcespage_assets/Icons/Vector.svg" alt="A vector icon" class="bg-[#FF6F61] w-[0.94rem] h-[0.94rem] rounded-[2px]">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="h-[16.2rem] w-[12.13rem] relative">
+
+                        <img src="./Assets/resourcespage_assets/Love Yourself.svg" alt="Image of the book cover 'LOVE YOURSELF LIKE YOUR LIFE DEPENDS ON IT'" class="absolute rounded-[12px] transform -top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+
+                        <div class="w-[12.13rem] h-[11.6rem] shadow-lg flex space-y-2 flex-col justify-end px-[1.1rem] pb-[0.9rem] rounded-[12px]">
+                            <p class="font-bold text-center">LOVE YOURSELF LIKE YOUR LIFE DEPENDS ON IT</p>
+                            <p class="text-center">The Easy Ways to Love Yourself and Start Living the Life you Pictured</p>
+                            <div class="flex items-center justify-center space-x-[0.9rem]">
+                                <img src="./Assets/resourcespage_assets/Icons/Eye-fill.svg" alt="The eye icon" class="bg-[#7B6AD6] w-[0.94rem] h-[0.94rem] rounded-[2px] -1 -[2px]">
+                                <img src="./Assets/resourcespage_assets/Icons/Play-Video Icon.svg" alt="Icon to play videos" class="bg-[#7B6AD6] w-[0.94rem] h-[0.94rem] rounded-[2px] -1 -[2px]">
+                                <img src="./Assets/resourcespage_assets/Icons/Headset.svg" alt="An headset icon" class="bg-[#7B6AD6] w-[0.94rem] h-[0.94rem] roounded-[2px] -1 -[2px]">
+                                <img src="./Assets/resourcespage_assets/Icons/Vector.svg" alt="A vector icon" class="bg-[#FF6F61] w-[0.94rem] h-[0.94rem] rounded-[2px]">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="h-[16.2rem] w-[12.13rem] relative">
+                        <img src="./Assets/resourcespage_assets/Wash Your Face.svg" alt="Image of the book cover, 'GIRL, WASH YOUR FACE'" class="absolute rounded-[12px] transform -top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/4">
+
+                        <div class="w-[12.13rem] h-[11.6rem] shadow-lg flex space-y-2 flex-col justify-end px-[1.1rem] pb-[0.9rem] rounded-[12px]">
+                            <p class="font-[700] text-center">GIRL, WASH YOUR FACE</p>
+                            <p class="text-center">Stop beleiving lies about who you are, so you can be where you want to be</p>
+    
+                            <div class="flex items-center justify-center space-x-[0.9rem]">
+                                <img src="./Assets/resourcespage_assets/Icons/Eye-fill.svg" alt="The eye icon" class="bg-[#757579] w-[0.94rem] h-[0.94rem] rounded-[2px] -1 -[2px]">
+                                <img src="./Assets/resourcespage_assets/Icons/Play-Video Icon.svg" alt="Icon to play videos" class="bg-[#7B6AD6] w-[0.94rem] h-[0.94rem] rounded-[2px] -1 -[2px]">
+                                <img src="./Assets/resourcespage_assets/Icons/Headset.svg" alt="An headset icon" class="bg-[#7B6AD6] w-[0.94rem] h-[0.94rem] roounded-[2px] -1 -[2px]">
+                                <img src="./Assets/resourcespage_assets/Icons/Vector.svg" alt="A vector icon" class="bg-[#FF6F61] w-[0.94rem] h-[0.94rem] rounded-[2px]">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="h-[16.2rem] w-[12.13rem] relative">
+                        
+                        <img src="./Assets/resourcespage_assets/Woman of Strength.svg" alt="Image of the book cover, 'WOMAN OF STRENGTH & PURPOSE'" class="absolute rounded-[12px] transform -top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/4">
+                        
+                        <div claas="w-[12.13rem] h-[11.6rem] shadow-lg flex space-y-2 flex-col justify-end px-[1.1rem] pb-[0.9rem] rounded-[12px]">
+                            <p class="font-[700] text-center">A WOMAN OF STRENGTH AND PURPOSE</p>
+                            <p class="text-center">Strategies for applying confidence to enrich your friendships, marriage, etc</p>
+                            <div class="flex items-center justify-center space-x-[0.9rem]">
+                                <img src="./Assets/resourcespage_assets/Icons/Eye-fill.svg" alt="The eye icon" class="bg-[#7B6AD6] w-[0.94rem] h-[0.94rem] rounded-[2px] -1 -[2px]">
+                                <img src="./Assets/resourcespage_assets/Icons/Play-Video Icon.svg" alt="Icon to play videos" class="bg-[#7B6AD6] w-[0.94rem] h-[0.94rem] rounded-[2px] py-1 px-[2px]">
+                                <img src="./Assets/resourcespage_assets/Icons/Headset.svg" alt="An headset icon" class="bg-[#7B6AD6] w-[0.94rem] h-[0.94rem] roounded-[2px] -1 -[2px]">
+                                <img src="./Assets/resourcespage_assets/Icons/Vector.svg" alt="A vector icon" class="bg-[#FF6F61] w-[0.94rem] h-[0.94rem] rounded-[2px]">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="h-[16.2rem] w-[12.13rem] relative">
+
+                        <img src="./Assets/resourcespage_assets/Body Positivity.svg" alt="Image of the book cover on 'BODY POSITIVITY'" class="absolute rounded-[12px] transform -top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/4">
+
+                        <div class="w-[12.13rem] h-[11.6rem] shadow-lg flex space-y-2 flex-col justify-end px-[1.1rem] pb-[0.9rem] rounded-[12px]">
+                            <p class="font-[700] text-center">BODY POSITIVITY & SELF-LOVE</p>
+                            <p class="text-center">Practice the art of radical self-love both for themselves and to transform our society.</p>
+                            <div class="flex items-center justify-center space-x-[0.9rem]">
+                                <img src="./Assets/resourcespage_assets/Icons/Eye-fill.svg" alt="The eye icon" class="bg-[#7B6AD6] w-[0.94rem] h-[0.94rem] rounded-[2px] -1 -[2px]">
+                                <img src="./Assets/resourcespage_assets/Icons/Play-Video Icon.svg" alt="Icon to play videos" class="bg-[#7B6AD6] w-[0.94rem] h-[0.94rem] rounded-[2px] -1 -[2px]">
+                                <img src="./Assets/resourcespage_assets/Icons/Headset.svg" alt="An headset icon" class="bg-[#7B6AD6] w-[0.94rem] h-[0.94rem] roounded-[2px] -1 -[2px]">
+                                <img src="./Assets/resourcespage_assets/Icons/Vector.svg" alt="A vector icon" class="bg-[#FF6F61] w-[0.94rem] h-[0.94rem] rounded-[2px]">
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="w-[12.1rem] relative">
+                        <img src="" alt="">
+
+                        <div>
+                            <p> class="font-[700]"THE POWER OF NOW</p>
+                            <p>A guide to spiritual enlightenment and discovering your true self</p>
+                            <div class="flex items-center space-x-[0.9rem]">
+                                <img src="./Assets/resourcespage_assets/Icons/Eye-fill.svg" alt="The eye icon" class="bg-[#7B6AD6] rounded-[2px] w-[0.94rem] h-[0.94rem]">
+                                <img src="./Assets/resourcespage_assets/Icons/Play-Video Icon.svg" alt="Icon to play videos" class="bg-[#7B6AD6] rounded-[2px] w-[0.94rem] h-[0.94rem]">
+                                <img src="./Assets/resource4spage_asset4s/Ic roounded-[2px]ons/Headset.svg" alt="An headset icon" class="bg-[#7B6AD6] rounded-[2px] w-[0.94rem] h-[0.94rem]">
+                                <img src="./Assets/resourcespage_assets/Icons/Vector.svg" alt="A vector icon" class="bg-[#FF6F61] w-[0.94rem] h-[0.94rem] rounded-[2px]">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-[12.1rem] relative">
+                        <img src="" alt="">
+                        <p></p>
+                        <p></p>
+                        <div>
+                            <img src="./Assets/resourcespage_assets/Icons/Eye-fill.svg" alt="">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                </section>
             </main>
 
 
