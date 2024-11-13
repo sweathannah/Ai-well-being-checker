@@ -137,7 +137,7 @@
                     <img src="./Assets/homepage_images/profile_pic.svg" alt="profile_pic">
                 </div>
             </header>
-            <section class="w-[60%] mt-[1.5rem] shadow-lg p-[1.59rem] border-b-[2px] border-gray-300">
+            <section class="w-[70%] mt-[1.5rem] shadow-lg p-[1.59rem] border-b-[2px] border-gray-300">
                 <div class="flex justify-between items-center font-[500] text-[0.7rem] text-[#555555CC] mb-[2.41rem]">
                     <label for="Challenge">Today:</label>
                     <progress id="file" max="100" value="70" class="w-[25rem] h-2 text-black rounded-lg overflow-hidden appearance-none">70%</progress>
@@ -149,18 +149,167 @@
                     <a href="#" id="notes-tab" class="text-[#333333] font-[500] text-[0.9rem] py-2 px-2 hover:text-purple-500" onclick="switchTab('notes')">Notes</a>
                 </div>
             </section>
-            <section class="w-[60%] mt-[1.5rem] shadow-lg p-[1.59rem]">
+            <section class="w-[70%] mt-[1.5rem] shadow-lg p-[1.59rem]">
                 <!-- Board Content (default visible) -->
-                <div id="board-content" class="w-full max-w-2xl ">
-                    <div class="flex p-[0.8rem] mt-8 bg-[#F5F5F5] w-fit rounded-[0.67rem]">
-                        <div class="bg-white rounded-lg shadow-md p-4 w-1/3 w-full">
-                            <h3 class="text-lg font-bold text-green-500">Completed</h3>
+                <div id="board-content" class="w-full flex flex-row space-x-3">
+                    <!-- completed bar -->
+                    <div class="flex p-[0.8rem] mt-8 bg-[#F5F5F5] w-[40%] rounded-[0.67rem] flex-col">
+                        <h3 class="text-lg font-bold text-green-500">Completed</h3>
+                        <div class=" w-full">
                             <div class="mt-4 space-y-4">
-                            <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
-                                <span class="text-sm font-semibold text-green-600">Completed</span>
-                                <p class="mt-2 text-gray-700">Walk 10 Minutes</p>
-                                <p class="text-xs text-gray-500">Felt refreshed after a short walk</p>
+                                <div class="bg-white rounded-lg shadow-md p-4">
+                                    <div class="bg-gray-50 p-2 rounded-lg border border-gray-200 flex flex-col h-[13rem]">
+                                        <div class=" p-2 pb-0">
+                                            <span class="text-sm font-semibold text-green-600">Completed</span>
+                                            <p class="mt-2 text-gray-700 font-[600]">Walk 10 Minutes</p>
+                                            <p class="text-xs text-gray-500">Felt refreshed after a short walk</p>
+                                            <button class="font-[500] text-[0.5rem] rounded-lg my-2 py-[0.16rem] px-[0.47rem] text-[#008080] bg-[#F5F5F5] w-fit">+10 wellness points</button>
+                                        </div>
+    
+                                        <button class="w-full bg-[#F5F6F8] py-[0.64rem] px-[0.875rem] rounded-[0.65rem] mt-[0.59rem]">
+                                            <img src="./Assets/homepage_images/check.svg" alt="Checkmark Icon" class="inline">
+                                            <span class="text-[#4CAF50] font-[500] text-[0.8rem] align-middle">Done</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="bg-white rounded-lg shadow-md p-4">
+                                    <div class="bg-gray-50 p-2 rounded-lg border border-gray-200 flex flex-col h-[13rem]">
+                                        <div class=" p-2 pb-0">
+                                            <span class="text-sm font-semibold text-green-600">Completed</span>
+                                            <p class="mt-2 text-gray-700 font-[600]">Gratitude Reflection</p>
+                                            <p class="text-xs text-gray-500">Write 3 things you are grateful for today</p>
+                                            <button class="font-[500] text-[0.5rem] rounded-lg my-2 py-[0.16rem] px-[0.47rem] text-[#008080] bg-[#F5F5F5] w-fit">+10 wellness points</button>
+                                        </div>
+    
+                                        <button class="w-full bg-[#F5F6F8] py-[0.64rem] px-[0.875rem] rounded-[0.65rem] mt-[0.59rem]">
+                                            <img src="./Assets/homepage_images/check.svg" alt="Checkmark Icon" class="inline">
+                                            <span class="text-[#4CAF50] font-[500] text-[0.8rem] align-middle">Done</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="bg-white rounded-lg shadow-md p-4">
+                                    <div class="bg-gray-50 p-2 rounded-lg border border-gray-200 flex flex-col h-[13rem]">
+                                        <div class=" p-2 pb-0">
+                                            <span class="text-sm font-semibold text-green-600">Completed</span>
+                                            <p class="mt-2 text-gray-700 font-[600]"> Hydration Goal</p>
+                                            <p class="text-xs text-gray-500">Met daily water intake goal (8/8 cups)</p>
+                                            <button class="font-[500] text-[0.5rem] rounded-lg my-2 py-[0.16rem] px-[0.47rem] text-[#008080] bg-[#F5F5F5] w-fit">+10 wellness points</button>
+                                        </div>
+    
+                                        <button class="w-full bg-[#F5F6F8] py-[0.64rem] px-[0.875rem] rounded-[0.65rem] mt-[0.59rem]">
+                                            <img src="./Assets/homepage_images/check.svg" alt="Checkmark Icon" class="inline">
+                                            <span class="text-[#4CAF50] font-[500] text-[0.8rem] align-middle">Done</span>
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
+                        </div>
+                    <!-- Add more task columns as needed -->
+                    </div>
+                    <!-- Inprogress bar -->
+                    <div class="flex p-[0.8rem] mt-8 bg-[#F5F5F5] w-[40%] rounded-[0.67rem] flex-col">
+                        <h3 class="text-lg font-bold text-[#7B6AD6]">In Progress</h3>
+                        <div class=" w-full">
+                            <div class="mt-4 space-y-4">
+                                <div class="bg-white rounded-lg shadow-md p-4">
+                                    <div class="bg-gray-50 p-2 rounded-lg border border-gray-200 flex flex-col h-[13rem]">
+                                        <div class=" p-2 pb-0">
+                                            <span class="text-sm font-semibold text-green-600">Completed</span>
+                                            <p class="mt-2 text-gray-700 font-[600]">Walk 10 Minutes</p>
+                                            <p class="text-xs text-gray-500">Felt refreshed after a short walk</p>
+                                            <button class="font-[500] text-[0.5rem] rounded-lg my-2 py-[0.16rem] px-[0.47rem] text-[#008080] bg-[#F5F5F5] w-fit">+10 wellness points</button>
+                                        </div>
+    
+                                        <button class="w-full bg-[#F5F6F8] py-[0.64rem] px-[0.875rem] rounded-[0.65rem] mt-[0.59rem]">
+                                            <img src="./Assets/homepage_images/check.svg" alt="Checkmark Icon" class="inline">
+                                            <span class="text-[#4CAF50] font-[500] text-[0.8rem] align-middle">Done</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="bg-white rounded-lg shadow-md p-4">
+                                    <div class="bg-gray-50 p-2 rounded-lg border border-gray-200 flex flex-col h-[13rem]">
+                                        <div class=" p-2 pb-0">
+                                            <span class="text-sm font-semibold text-green-600">Completed</span>
+                                            <p class="mt-2 text-gray-700 font-[600]">Gratitude Reflection</p>
+                                            <p class="text-xs text-gray-500">Write 3 things you are grateful for today</p>
+                                            <button class="font-[500] text-[0.5rem] rounded-lg my-2 py-[0.16rem] px-[0.47rem] text-[#008080] bg-[#F5F5F5] w-fit">+10 wellness points</button>
+                                        </div>
+    
+                                        <button class="w-full bg-[#F5F6F8] py-[0.64rem] px-[0.875rem] rounded-[0.65rem] mt-[0.59rem]">
+                                            <img src="./Assets/homepage_images/check.svg" alt="Checkmark Icon" class="inline">
+                                            <span class="text-[#4CAF50] font-[500] text-[0.8rem] align-middle">Done</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="bg-white rounded-lg shadow-md p-4">
+                                    <div class="bg-gray-50 p-2 rounded-lg border border-gray-200 flex flex-col h-[13rem]">
+                                        <div class=" p-2 pb-0">
+                                            <span class="text-sm font-semibold text-green-600">Completed</span>
+                                            <p class="mt-2 text-gray-700 font-[600]"> Hydration Goal</p>
+                                            <p class="text-xs text-gray-500">Met daily water intake goal (8/8 cups)</p>
+                                            <button class="font-[500] text-[0.5rem] rounded-lg my-2 py-[0.16rem] px-[0.47rem] text-[#008080] bg-[#F5F5F5] w-fit">+10 wellness points</button>
+                                        </div>
+    
+                                        <button class="w-full bg-[#F5F6F8] py-[0.64rem] px-[0.875rem] rounded-[0.65rem] mt-[0.59rem]">
+                                            <img src="./Assets/homepage_images/check.svg" alt="Checkmark Icon" class="inline">
+                                            <span class="text-[#4CAF50] font-[500] text-[0.8rem] align-middle">Done</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <!-- Add more task columns as needed -->
+                    </div>
+                    <!-- Upcoming bar -->
+                    <div class="flex p-[0.8rem] mt-8 bg-[#F5F5F5] w-[40%] rounded-[0.67rem] flex-col">
+                        <h3 class="text-lg font-bold text-green-500">In Progress</h3>
+                        <div class=" w-full">
+                            <div class="mt-4 space-y-4">
+                                <div class="bg-white rounded-lg shadow-md p-4">
+                                    <div class="bg-gray-50 p-2 rounded-lg border border-gray-200 flex flex-col h-[13rem]">
+                                        <div class=" p-2 pb-0">
+                                            <span class="text-sm font-semibold text-green-600">Completed</span>
+                                            <p class="mt-2 text-gray-700 font-[600]">Walk 10 Minutes</p>
+                                            <p class="text-xs text-gray-500">Felt refreshed after a short walk</p>
+                                            <button class="font-[500] text-[0.5rem] rounded-lg my-2 py-[0.16rem] px-[0.47rem] text-[#008080] bg-[#F5F5F5] w-fit">+10 wellness points</button>
+                                        </div>
+    
+                                        <button class="w-full bg-[#F5F6F8] py-[0.64rem] px-[0.875rem] rounded-[0.65rem] mt-[0.59rem]">
+                                            <img src="./Assets/homepage_images/check.svg" alt="Checkmark Icon" class="inline">
+                                            <span class="text-[#4CAF50] font-[500] text-[0.8rem] align-middle">Done</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="bg-white rounded-lg shadow-md p-4">
+                                    <div class="bg-gray-50 p-2 rounded-lg border border-gray-200 flex flex-col h-[13rem]">
+                                        <div class=" p-2 pb-0">
+                                            <span class="text-sm font-semibold text-green-600">Completed</span>
+                                            <p class="mt-2 text-gray-700 font-[600]">Gratitude Reflection</p>
+                                            <p class="text-xs text-gray-500">Write 3 things you are grateful for today</p>
+                                            <button class="font-[500] text-[0.5rem] rounded-lg my-2 py-[0.16rem] px-[0.47rem] text-[#008080] bg-[#F5F5F5] w-fit">+10 wellness points</button>
+                                        </div>
+    
+                                        <button class="w-full bg-[#F5F6F8] py-[0.64rem] px-[0.875rem] rounded-[0.65rem] mt-[0.59rem]">
+                                            <img src="./Assets/homepage_images/check.svg" alt="Checkmark Icon" class="inline">
+                                            <span class="text-[#4CAF50] font-[500] text-[0.8rem] align-middle">Done</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="bg-white rounded-lg shadow-md p-4">
+                                    <div class="bg-gray-50 p-2 rounded-lg border border-gray-200 flex flex-col h-[13rem]">
+                                        <div class=" p-2 pb-0">
+                                            <span class="text-sm font-semibold text-green-600">Completed</span>
+                                            <p class="mt-2 text-gray-700 font-[600]"> Hydration Goal</p>
+                                            <p class="text-xs text-gray-500">Met daily water intake goal (8/8 cups)</p>
+                                            <button class="font-[500] text-[0.5rem] rounded-lg my-2 py-[0.16rem] px-[0.47rem] text-[#008080] bg-[#F5F5F5] w-fit">+10 wellness points</button>
+                                        </div>
+    
+                                        <button class="w-full bg-[#F5F6F8] py-[0.64rem] px-[0.875rem] rounded-[0.65rem] mt-[0.59rem]">
+                                            <img src="./Assets/homepage_images/check.svg" alt="Checkmark Icon" class="inline">
+                                            <span class="text-[#4CAF50] font-[500] text-[0.8rem] align-middle">Done</span>
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     <!-- Add more task columns as needed -->
